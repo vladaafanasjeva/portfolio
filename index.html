@@ -1,0 +1,1730 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio | Vlada Afanasjeva</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio" />
+    <meta
+      name="author"
+      content="My name is Vlada Afanasjeva. I’m a Multimedia design student at Business Academy Aarhus. I'm an aspiring front-end developer and UX/UI designer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/vbe5rta.css" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <a href="#home" class="nav-logo" onclick="goToSection()">
+        <img src="images/logo.png" alt="Logo" class="logo-img"
+      /></a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#home" class="nav-link" onclick="goToSection()">home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link" onclick="goToSection()">about</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link" onclick="goToSection()"
+            >projects</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#photography" class="nav-link" onclick="goToSection()"
+            >photography</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link" onclick="goToSection()"
+            >contact</a
+          >
+        </li>
+      </ul>
+      <!-- Burger menu for mobile -->
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
+    <!-- HOME PAGE -->
+    <!-- Header section -->
+    <main>
+      <header id="home" class="page intro-section">
+        <div class="background"></div>
+        <div class="intro" data-aos="fade-in">
+          <img
+            src="images/me.png"
+            class="me-img"
+            alt="Image of me - Vlada Afanasjeva"
+          />
+          <div class="intro-text-container">
+            <h1 class="intro-heading">
+              Hello,<br />
+              I'm Vlada
+            </h1>
+            <p class="intro-text">
+              I'm an aspiring <span class="bold">front-end</span><br />
+              developer and <span class="bold">ux/ui</span> designer
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <!-- About section -->
+      <section id="about" class="page">
+        <div class="about-flex">
+          <img
+            src="images/stars-blue.png"
+            class="stars-img"
+            data-aos="fade-down-left"
+            alt="Illustration of stars"
+          />
+          <div class="about-container" data-aos="fade-down-right">
+            <h2 class="about-heading">
+              nothing feels more exciting to me than making a meaningful<br />
+              impact for a social good.
+            </h2>
+            <p class="about-text">
+              I’m a Multimedia design student at Business Academy Aarhus.<br /><br />
+              Throughout my education, I began exploring my creative side and
+              I’ve found a passion of mine - designing and developing
+              UX-friendly and aesthetically pleasing solutions.<br /><br />
+
+              I love connecting the dots and indulge in problem-solving.<br />
+              I thrive on variety - I’m always up to take on a new challenge and
+              learn new techniques.<br /><br />
+
+              I’m naturally curious and I enjoy collaborating and sharing
+              visions with like-minded people.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Back to top arrow button-->
+      <button id="backButton" class="backBtn" onclick="backToTop()">
+        <img
+          src="images/arrow-back.png"
+          alt="Arrow icon to navigate to top of the page"
+        />
+      </button>
+
+      <!-- Competencies section -->
+      <section class="competencies-container page">
+        <h1 class="competencies-heading" data-aos="zoom-in">Competencies</h1>
+        <div class="competencies-flex">
+          <img
+            src="images/tools-illustration.png"
+            class="competencies-img"
+            data-aos="flip-left"
+            alt="Illustration displaying tools I'm skilled in - Adobe Xd, Photoshop, Illustrator, HTML, CSS, JavaScript"
+          />
+          <img
+            src="images/skills-illustration.png"
+            class="competencies-img"
+            data-aos="flip-right"
+            alt="Illustration displaying my personal competencies - Communication, Flexibility, Open-Mindness, Creativity and Problem Solving"
+          />
+        </div>
+      </section>
+
+      <!-- Projects section -->
+      <section id="projects" class="page projects-container">
+        <h1 class="projects-heading" data-aos="zoom-in">Projects</h1>
+        <div id="flexbox-projects" class="flexbox-projects">
+          <div class="projects-flex">
+            <div class="flexbox">
+              <a href="#project3" onclick="showProject3()">
+                <div class="project">
+                  <div class="project-img3">
+                    <div class="overlay">
+                      <div class="overlay-text">
+                        UX/UI, HTML, CSS, JavaScript, SPA Architecture, Headless
+                        CMS
+                      </div>
+                    </div>
+                  </div>
+                  <p class="project-text">Selfly - self-care app</p>
+                </div>
+              </a>
+
+              <a href="#project4" onclick="showProject4()">
+                <div class="project">
+                  <div class="project-img4">
+                    <div class="overlay">
+                      <div class="overlay-text">
+                        UX/UI, Sketching, Storyboard, Prototyping, Usability
+                        Test
+                      </div>
+                    </div>
+                  </div>
+                  <p class="project-text">UX Challenge - Swibbid</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="flexbox">
+              <a href="#project1" onclick="showProject1()">
+                <div class="project">
+                  <div class="project-img1">
+                    <div class="overlay">
+                      <div class="overlay-text">
+                        Scrum, Target Audience Analysis, Personas, Sitemap, Tone
+                        of Voice, JavaScript
+                      </div>
+                    </div>
+                  </div>
+                  <p class="project-text">Frontløberne - Creative Charge</p>
+                </div>
+              </a>
+
+              <a href="#project2" onclick="showProject2()">
+                <div class="project">
+                  <div class="project-img2">
+                    <div class="overlay">
+                      <div class="overlay-text">
+                        UX/UI, Prototyping, Project Management, Visual Identity,
+                        API, Usability Test
+                      </div>
+                    </div>
+                  </div>
+                  <p class="project-text">Dormbuddy app</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="flexbox flex-one">
+              <a href="#project5" onclick="showProject5()">
+                <div class="project">
+                  <div class="project-img5">
+                    <div class="overlay">
+                      <div class="overlay-text">
+                        Storytelling, Creative Brief, Quantitative research,
+                        Personas, Target group analysis
+                      </div>
+                    </div>
+                  </div>
+                  <p class="project-text">nuuii Web Documentary</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Photography section -->
+      <section id="photography" class="page">
+        <h1 class="photography-heading" data-aos="zoom-in">Photography</h1>
+        <div class="text-box">
+          <p class="photography-text">
+            I’m a very outdoorsy person - most of my life’s happiest moments are
+            connected to travelling and exploring new places with my friends and
+            family.<br /><br />
+
+            Taking pictures has always been a hobby of mine, I love capturing
+            moments that will always remind me of great experiences. I believe
+            that pictures are the best storytellers and a way how people can
+            connect and inspire each other.
+          </p>
+        </div>
+
+        <div class="photography-flex">
+          <div class="photo1"></div>
+          <div class="photo2"></div>
+          <div class="photo3"></div>
+          <div class="photo4"></div>
+          <div class="photo5"></div>
+          <div class="photo6"></div>
+          <div class="photo7"></div>
+          <div class="photo8"></div>
+          <div class="photo9"></div>
+        </div>
+
+        <div id="moreimg" class="photography-flex2">
+          <div class="photo10"></div>
+          <div class="photo11"></div>
+          <div class="photo12"></div>
+          <div class="photo13"></div>
+          <div class="photo14"></div>
+          <div class="photo15"></div>
+          <div class="photo16"></div>
+          <div class="photo17"></div>
+          <div class="photo18"></div>
+          <div class="photo19"></div>
+          <div class="photo20"></div>
+          <div class="photo21"></div>
+          <div class="photo22"></div>
+          <div class="photo23"></div>
+          <div class="photo24"></div>
+        </div>
+        <div class="center">
+          <button
+            type="button"
+            id="showmore"
+            onclick="showMore()"
+            class="moreBtn"
+          >
+            show more
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="page contact-container">
+      <h1 class="contact-heading" data-aos="zoom-in">
+        Interested in working<br />together?
+      </h1>
+      <div class="wrapper">
+        <form action="#">
+          <div class="dbl-field">
+            <div class="field">
+              <input type="text" name="name" placeholder="What is your name?" />
+            </div>
+            <div class="field">
+              <input
+                type="text"
+                name="email"
+                placeholder="What is your e-mail?"
+              />
+            </div>
+          </div>
+          <div class="message">
+            <textarea
+              placeholder="Write your message..."
+              name="message"
+            ></textarea>
+          </div>
+          <div class="button-area">
+            <button type="submit">send</button>
+            <span></span>
+          </div>
+        </form>
+      </div>
+
+      <a href="mailto:hello@vladaafanasjeva.com" class="email-link"
+        >hello@vladaafanasjeva.com</a
+      >
+      <p class="phone">+45 55232225</p>
+
+      <div class="some-flex">
+        <a href="https://www.linkedin.com/in/vladaafanasjeva/"
+          ><img
+            src="images/linkedin-icon.png"
+            class="some-icon"
+            alt="LinkedIn Icon"
+        /></a>
+        <a href="https://www.facebook.com/vlada.afanasjeva.1/"
+          ><img
+            src="images/facebook-icon.png"
+            class="some-icon"
+            alt="Facebook Icon"
+        /></a>
+        <a href="https://www.instagram.com/vladaafanasjeva/"
+          ><img
+            src="images/instagram-icon.png"
+            class="some-icon"
+            alt="Instagram Icon"
+        /></a>
+      </div>
+      <p class="copyright">Made with ♥ @ 2021 Vlada Afanasjeva</p>
+    </footer>
+
+    <!-- PROJECT DETAIL VIEW -->
+
+    <!-- PROJECT 1: Frontloberne  -->
+
+    <section id="project1" class="project1">
+      <div class="detail-header header-wide">
+        <img
+          src="images/frontloberne/frontlobernetransparent.png"
+          class="frontloberne-img"
+          alt="Mockup of solution for Frontloberne"
+        />
+        <h1 class="project-name">Frontløberne - Creative Charge</h1>
+      </div>
+
+      <div class="detail-info" data-aos="flip-up">
+        <h2 class="detail-heading" data-aos="flip-up">Project info</h2>
+        <p class="detail-text"><span class="bold">Date: </span>May 2021</p>
+        <p class="detail-text"><span class="bold">Duration: </span>4 weeks</p>
+        <p class="detail-text">
+          <span class="bold">Team: </span>Group of 5 students
+        </p>
+        <div class="detail-flex">
+          <div class="detail-tools">
+            <h2 class="detail-heading">Tools</h2>
+            <img
+              src="images/frontloberne/tools.png"
+              class="tools-img"
+              alt="Icons of tools used in the project"
+            />
+          </div>
+          <div class="detail-methods">
+            <h2 class="detail-heading">Keywords</h2>
+            <p class="methods-text">
+              Scrum<br />
+              Target Audience Analysis<br />
+              Personas<br />
+              Sitemap<br />
+              Tone of Voice<br />
+              Mockups
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="body-detail">
+        <h2 class="detail-mainheading" data-aos="flip-up">Client</h2>
+        <p class="detail-maintext" data-aos="flip-up">
+          Our client was Frontløberne - an open creative space for young culture
+          creators and entrepreneurs.<br />
+          It has a rich history of organizing events and embarking projects,
+          influencing the young Aarhus community.
+        </p>
+
+        <h2 class="detail-mainheading" data-aos="zoom-in">Case</h2>
+        <p class="detail-maintext">
+          How can our team help Frontløberne with a digital solution that
+          <span class="bold">raises awareness</span> of the impact that
+          Frontløberne has on the creative community in Aarhus,
+          <span class="bold">reflects</span> their offline presence accurately
+          and <span class="bold">attracts</span> new members?
+        </p>
+
+        <h2 class="detail-mainheading">Process</h2>
+        <p class="detail-maintext">
+          To kick off our project, we started with the research and analysis of
+          our client and target audience by conducting interviews and desk
+          research. We discovered our main target group -
+          <span class="bold"
+            >young adults aged between 25-34 years that are creative and love
+            cultural activities </span
+          >- and created our <span class="bold"><i>Personas</i></span
+          >.
+        </p>
+      </div>
+
+      <img
+        src="images/frontloberne/Persona1.png"
+        alt="Persona - Marko for Frontloberne project"
+        class="image"
+      />
+      <img
+        src="images/frontloberne/Persona2.png"
+        alt="Persona - Rebecca for Frontloberne project"
+        class="image"
+      />
+
+      <div class="body-detail">
+        <p class="detail-maintext">
+          <br />After that we started brainstorming on the content and structure
+          of the solution needed to meed the user needs and business objectives.
+          We created a <span class="bold"><i>Sitemap -</i></span> hierarchy of
+          our solution’s information architecture. Then we established
+          <span class="bold"><i>the Tone of Voice</i></span> to guide how the
+          content should be written.
+        </p>
+      </div>
+      <div class="flexi-img">
+        <img
+          src="images/frontloberne/sitemap.png"
+          alt="Sitemap of Frontloberne's website"
+          class="sitemap"
+        />
+        <img
+          src="images/frontloberne/tone-of-voice.png"
+          alt="Tone of Voice for Frontloberne"
+          class="sitemap"
+        />
+      </div>
+
+      <div class="body-detail">
+        <p class="detail-maintext">
+          <br />After setting the direction of our project’s design, getting
+          inspiration and brainstorming on design elements of our solution, we
+          carried out the design process of creating a
+          <span class="bold"
+            ><i>Mood board, Style tile, Wireframes and Mockups.</i></span
+          >
+          Lastly, we made a <span class="bold"><i>Design guide</i></span> for
+          anyone to use when creating future content.
+        </p>
+      </div>
+
+      <p class="caption">Mood Board</p>
+      <img
+        src="images/frontloberne/moodboard.png"
+        alt="Moodboard for Frontloberne's website"
+        class="image-small"
+      />
+      <p class="caption">Style Tile</p>
+      <img
+        src="images/frontloberne/StyleTile.png"
+        alt="Style Tile for Frontloberne's website"
+        class="image-small"
+      />
+      <p class="caption">Mockups</p>
+      <img
+        src="images/frontloberne/mockups.jpg"
+        alt="Desktop Mockups for Frontloberne's website"
+        class="image-small"
+      />
+
+      <div class="body-detail">
+        <h2 class="detail-mainheading">Reflection</h2>
+        <p class="detail-maintext">
+          Based on our research, we decided on creating a brand-new website for
+          their cultural center. We proceeded to change the old design for a
+          better user experience and new audience.<br /><br />
+
+          Our solution is of great importance for the non-members because it
+          introduces them to what Frontløberne is about as a cultural
+          organization and it inspires them to apply. Besides that, it helps
+          current members to keep a track on information such as events and
+          portfolios.
+        </p>
+
+        <div class="explore">
+          <a
+            href="https://vladaafanasjeva.com/frontloberne/"
+            class="external-link"
+            >Check out our working prototype!</a
+          >
+          <a
+            href="https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:420ae877-f360-4e35-aa84-be588af3ef0a"
+            class="external-link"
+            >Take a look at our report.</a
+          >
+        </div>
+      </div>
+
+      <div class="nav-detail-desktop">
+        <a href="#home" onclick="goToSection()" class="link-nav">
+          <img
+            src="images/arrow-left.png"
+            alt="Icon Arrow to navigate"
+            height="51"
+            width="245"
+            class="mySvg"
+          />
+        </a>
+        <a href="#project2" onclick="showProject2()" class="link-nav">
+          <img
+            src="images/arrow-right.png"
+            alt="Icon Arrow to navigate"
+            height="51"
+            width="245"
+            class="mySvg"
+          />
+        </a>
+      </div>
+
+      <div class="nav-detail-mobile">
+        <a href="#home" onclick="goToSection()" class="link-nav">
+          <img
+            src="images/arrow-left.png"
+            alt="Icon Arrow to navigate"
+            height="25"
+            width="122"
+            class="mySvg"
+          />
+        </a>
+        <a href="#project2" onclick="showProject2()" class="link-nav">
+          <img
+            src="images/arrow-right.png"
+            alt="Icon Arrow to navigate"
+            height="51"
+            width="245"
+            class="mySvg"
+          />
+        </a>
+      </div>
+
+      <div class="contact-container">
+        <h1 class="contact-heading">Interested in working<br />together?</h1>
+        <div class="wrapper">
+          <form action="#">
+            <div class="dbl-field">
+              <div class="field">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="What is your name?"
+                />
+              </div>
+              <div class="field">
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="What is your e-mail?"
+                />
+              </div>
+            </div>
+            <div class="message">
+              <textarea
+                placeholder="Write your message..."
+                name="message"
+              ></textarea>
+            </div>
+            <div class="button-area">
+              <button type="submit">send</button>
+              <span></span>
+            </div>
+          </form>
+        </div>
+
+        <a href="mailto:hello@vladaafanasjeva.com" class="email-link"
+          >hello@vladaafanasjeva.com</a
+        >
+        <p class="phone">+45 55232225</p>
+
+        <div class="some-flex">
+          <a href="https://www.linkedin.com/in/vladaafanasjeva/"
+            ><img
+              src="images/linkedin-icon.png"
+              class="some-icon"
+              alt="LinkedIn Icon"
+          /></a>
+          <a href="https://www.facebook.com/vlada.afanasjeva.1/"
+            ><img
+              src="images/facebook-icon.png"
+              class="some-icon"
+              alt="Facebook Icon"
+          /></a>
+          <a href="https://www.instagram.com/vladaafanasjeva/"
+            ><img
+              src="images/instagram-icon.png"
+              class="some-icon"
+              alt="Instagram Icon"
+          /></a>
+        </div>
+        <p class="copyright">Made with ♥ @ 2021 Vlada Afanasjeva</p>
+      </div>
+    </section>
+
+    <!-- PROJECT 2: DormBuddy -->
+
+    <section id="project2" class="project2">
+      <div class="detail-header">
+        <img
+          src="images/dormbuddy/dormbuddytransparent.png"
+          class="frontloberne-img"
+          alt="Mockup of solution for Frontloberne"
+        />
+        <h1 class="project-name">Dormbuddy app</h1>
+      </div>
+
+      <div class="detail-info">
+        <h2 class="detail-heading">Project info</h2>
+        <p class="detail-text"><span class="bold">Date: </span>April 2021</p>
+        <p class="detail-text"><span class="bold">Duration: </span>2 weeks</p>
+        <p class="detail-text">
+          <span class="bold">Team: </span>Group of 5 students
+        </p>
+        <div class="detail-flex">
+          <div class="detail-tools">
+            <h2 class="detail-heading">Tools</h2>
+            <img
+              src="images/frontloberne/tools.png"
+              class="tools-img"
+              alt="Icons of tools used in the project"
+            />
+          </div>
+          <div class="detail-methods">
+            <h2 class="detail-heading">Keywords</h2>
+            <div class="methods-flex">
+              <p class="methods-text">
+                UX/UI<br />
+                Prototyping<br />
+                Project Management<br />
+                Visual Identity<br />
+                API<br />
+                Usability Test
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="body-detail">
+        <h2 class="detail-mainheading">Client</h2>
+        <p class="detail-maintext">
+          We created a solution for
+          <span class="bold">Skejbo student dormitory </span>located in Aarhus.
+        </p>
+
+        <h2 class="detail-mainheading">Case</h2>
+        <p class="detail-maintext">
+          Only a few dorms in Aarhus have their own bespoke visual identity.<br />
+          The goal of the project was to develop an
+          <span class="bold">interactive user experience</span> that would be
+          benefit the dorm and its' inhabitants.
+        </p>
+
+        <h2 class="detail-mainheading">Process</h2>
+        <p class="detail-maintext">
+          The project started with throughout desk and field research on the
+          client and target audience. We conducted several interviews to get an
+          idea of who lived in the dorms and what problems they were facing.<br /><br />
+          Our findings showed that there is a lack of information about Skejbo
+          kollegiet, therefore a resident could easily feel confused.<br /><br />
+          After analysing our research data, we discovered our target group -
+          <span class="bold"
+            >mostly Danish but also international Skejbo residents between 18-25
+            years that often struggle to find proper information about the
+            dorm</span
+          >. We created two <span class="bold">Personas</span> that represent
+          user needs.
+        </p>
+      </div>
+      <div class="flexi-img">
+        <img
+          src="images/dormbuddy/persona1.jpg"
+          alt="Persona Jacob for Dorm Buddy"
+          class="persona"
+        />
+        <img
+          src="images/dormbuddy/persona2.jpg"
+          alt="Persona Julie for Dorm Buddy"
+          class="persona"
+        />
+      </div>
+      <div class="body-detail">
+        <p class="detail-maintext">
+          When it comes to the design, we needed to establish the visual
+          identity of Skejbo. We made a
+          <span class="bold">Creative Brief</span> and summarized all of the
+          technical purposes and visual goals for the solution. <br /><br />
+          To sum up, while the solution should be perceived as a resident guide
+          on life at the dorm which is UX-friendly, informative, visually
+          descriptive and properly organized, we wanted our design to associate
+          with friendliness, simplicity and youth.
+        </p>
+      </div>
+      <img
+        src="images/dormbuddy/creativebrief.png"
+        alt="Creative Brief"
+        class="image"
+      />
+      <div class="body-detail">
+        <p class="detail-maintext paragraph">
+          Our design process continued with implementing the
+          <span class="bold">Mockups</span>. Based on user needs, we decided
+          that our app should contain 5 navigational pages - dashboard with all
+          the content shortened, news and events page, marketplace, assistance
+          page and map.<br /><br />
+          We tried to implement decluttering to preserve the user with only what
+          they need to know and keep interface elements to a minimum. We also
+          used familiar and intuitive screens that do not require additional
+          explanation, for example, the onboarding screens educate the user
+          about the functions and benefits of the app.
+        </p>
+      </div>
+      <img
+        src="images/dormbuddy/mockup.jpg"
+        alt="Mockups for Frontloberne's website"
+        class="image-medium"
+      />
+      <div class="body-detail">
+        <h2 class="detail-mainheading">Reflection</h2>
+        <p class="detail-maintext">
+          We believe that we created something that would be useful on a day to
+          day basis for the Skejbo residents. Current situation of the
+          information online is all over the place and our solution organises
+          and puts it in easy navigable space.<br /><br />
+          Since we weren’t to develop an actual mobile app, we developed a
+          prototype using HTML, CSS and JS with a mobile-first approach. We used
+          the mapbox’s API to display nearby places relevant to the people
+          living in the dorm. The API allowed us to create custom pin points and
+          adjust the colours to fit our UI.
+        </p>
+
+        <div class="explore">
+          <a
+            href="https://vladaafanasjeva.com/skejbo-app/"
+            class="external-link"
+            >Check out our working prototype!</a
+          >
+          <a
+            href="https://xd.adobe.com/view/2abb9ee2-da4d-40e7-8521-9841aeb55fbd-7fe8/"
+            class="external-link"
+            >Take a look at our XD Prototype.</a
+          >
+        </div>
+      </div>
+
+      <div class="nav-detail-desktop">
+        <a href="#home" onclick="goToSection()" class="link-nav">
+          <img
+            src="images/arrow-left.png"
+            alt="Icon Arrow to navigate"
+            height="51"
+            width="245"
+            class="mySvg"
+          />
+        </a>
+        <a href="#project5" onclick="showProject5()" class="link-nav">
+          <img
+            src="images/arrow-right.png"
+            alt="Icon Arrow to navigate"
+            height="51"
+            width="245"
+            class="mySvg"
+          />
+        </a>
+      </div>
+
+      <div class="nav-detail-mobile">
+        <a href="#home" onclick="goToSection()" class="link-nav">
+          <img
+            src="images/arrow-left.png"
+            alt="Icon Arrow to navigate"
+            height="25"
+            width="122"
+            class="mySvg"
+          />
+        </a>
+        <a href="#project5" onclick="showProject5()" class="link-nav">
+          <img
+            src="images/arrow-right.png"
+            alt="Icon Arrow to navigate"
+            height="25"
+            width="122"
+            class="mySvg"
+          />
+        </a>
+      </div>
+
+      <div class="contact-container">
+        <h1 class="contact-heading">Interested in working<br />together?</h1>
+        <div class="wrapper">
+          <form action="#">
+            <div class="dbl-field">
+              <div class="field">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="What is your name?"
+                />
+              </div>
+              <div class="field">
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="What is your e-mail?"
+                />
+              </div>
+            </div>
+            <div class="message">
+              <textarea
+                placeholder="Write your message..."
+                name="message"
+              ></textarea>
+            </div>
+            <div class="button-area">
+              <button type="submit">send</button>
+              <span></span>
+            </div>
+          </form>
+        </div>
+
+        <a href="mailto:hello@vladaafanasjeva.com" class="email-link"
+          >hello@vladaafanasjeva.com</a
+        >
+        <p class="phone">+45 55232225</p>
+
+        <div class="some-flex">
+          <a href="https://www.linkedin.com/in/vladaafanasjeva/"
+            ><img
+              src="images/linkedin-icon.png"
+              class="some-icon"
+              alt="LinkedIn Icon"
+          /></a>
+          <a href="https://www.facebook.com/vlada.afanasjeva.1/"
+            ><img
+              src="images/facebook-icon.png"
+              class="some-icon"
+              alt="Facebook Icon"
+          /></a>
+          <a href="https://www.instagram.com/vladaafanasjeva/"
+            ><img
+              src="images/instagram-icon.png"
+              class="some-icon"
+              alt="Instagram Icon"
+          /></a>
+        </div>
+        <p class="copyright">Made with ♥ @ 2021 Vlada Afanasjeva</p>
+      </div>
+    </section>
+
+    <!-- PROJECT 3: Selfly -->
+
+    <section id="project3" class="project3">
+      <div class="detail-header">
+        <img
+          src="images/selfly/seflytransparent.png"
+          class="frontloberne-img"
+          alt="Mockup of Selfly App"
+        />
+        <h1 class="project-name">Selfly - self-care app</h1>
+      </div>
+
+      <div class="detail-info">
+        <h2 class="detail-heading">Project info</h2>
+        <p class="detail-text"><span class="bold">Date: </span>October 2021</p>
+        <p class="detail-text"><span class="bold">Duration: </span>3 weeks</p>
+        <p class="detail-text">
+          <span class="bold">Team: </span>Group of 4 students
+        </p>
+        <div class="detail-flex">
+          <div class="detail-tools">
+            <h2 class="detail-heading">Tools</h2>
+            <img
+              src="images/frontloberne/tools.png"
+              class="tools-img"
+              alt="Icons of tools used in the project"
+            />
+          </div>
+          <div class="detail-methods">
+            <h2 class="detail-heading">Keywords</h2>
+            <div class="methods-flex">
+              <p class="methods-text">
+                UX/UI<br />
+                User Centered Development<br />
+                Headless CMS<br />
+                SPA Architecture<br />
+                Usability Test
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="body-detail">
+        <h2 class="detail-mainheading">Case</h2>
+        <p class="detail-maintext">
+          Developing a concept for a web app and implementing an interactive
+          prototype with JavaScript, HTML, and CSS.
+        </p>
+
+        <h2 class="detail-mainheading">Concept</h2>
+        <p class="detail-maintext">
+          It is only natural to have feelings change throughout the day and
+          experience different emotions - it is normal to feel stressed,
+          frustrated or unmotivated sometimes. But what is really important is
+          how we cope with those emotional burdens.<br /><br />
+          Many times people lack ideas of how they can take care of themselves
+          and with the ocean of content out there it can be very hard to find
+          something that is right for them. This is where
+          <span class="bold">Selfly</span> comes to the rescue. Selfly was born
+          from the idea of helping people find new ways to boost their
+          well-being.
+        </p>
+
+        <h2 class="detail-mainheading">Process</h2>
+        <p class="detail-maintext">
+          In order to create a well-designed solution that meets the target
+          audience’s needs, the research process was a very important foundation
+          for our next decisions.<br /><br />
+          When we had just picked the concept for our app, we had a lot of broad
+          ideas of what topics we could touch on. After conducting desk research
+          by searching for relevant statistics about people indulging in
+          self-care, we were able to determine our target group -
+          <span class="bold"
+            >young people aged between 16-35 who tend to experience emotional
+            burdens.</span
+          ><br /><br />
+          But to further understand the target audience and identify their
+          goals, we mapped the <span class="bold">User Scenario</span> and
+          <span class="bold">User Journey</span> - concise representations of
+          user experience.<br />
+          We mapped the “steps” and feelings that the user goes through before,
+          during and after using our app. This really helped us to get into our
+          user's shoes and look at what they wish to achieve, so that we can
+          reflect on it when arguing for our design choices.
+        </p>
+      </div>
+      <img
+        src="images/selfly/User-Scenario.png"
+        alt="User Scenario"
+        class="image"
+      />
+      <img
+        src="images/selfly/User-Journey.png"
+        alt="User Journey"
+        class="image-small"
+      />
+      <div class="body-detail paragraph">
+        <p class="detail-maintext">
+          In our <span class="bold">Style Tile</span> we gathered all the UI
+          elements like font, colors and icons that we should use in our design.
+        </p>
+      </div>
+      <img
+        src="images/selfly/Style-Tile.png"
+        alt="Style Tile"
+        class="image-small"
+      />
+      <div class="body-detail paragraph">
+        <p class="detail-maintext">
+          We want users to feel at ease when using our app. Sometimes it is hard
+          for people to express their feelings, so we want their first
+          impression of the app to convey trust, friendliness and caring.
+        </p>
+      </div>
+      <img
+        src="images/selfly/overview.png"
+        alt="Process of using Selfly"
+        class="image-medium"
+      />
+      <div class="body-detail paragraph">
+        <p class="detail-maintext">
+          The illustrations from the home screen are supposed to represent the
+          user's emotions, but if that’s too overwhelming for them, there is
+          also the quiz – a simplified version which is a step-by-step process
+          that gets you through different screens with more concrete emotion
+          representation.
+        </p>
+      </div>
+      <img
+        src="images/selfly/quiz.png"
+        alt="Quiz inside Selfly"
+        class="image-medium"
+      />
+      <div class="body-detail paragraph">
+        <p class="detail-maintext">
+          The app’s general design reflects softness and positive vibes, due to
+          the silky-pastel color palette and roundness, which distresses and
+          alleviates the user.
+        </p>
+      </div>
+      <img
+        src="images/selfly/colors.png"
+        alt="Color Palette of Selfly"
+        class="image-medium"
+      />
+      <div class="body-detail paragraph">
+        <p class="detail-maintext">
+          We created our HI-FI prototype, in other words
+          <span class="bold">Mockups</span>, out of tested Wireframes and by
+          reflecting on our Style Tile to keep our design elements consistent.
+          All of the content is structured in a way to meet the user goals and
+          help to achieve the tasks that the users might want to perform on the
+          app.
+        </p>
+      </div>
+      <img
+        src="images/selfly/mockup.png"
+        alt="Mockup of Selfly"
+        class="image"
+      />
+      <div class="body-detail paragraph">
+        <p class="detail-maintext">
+          To kick-off our development process, we set up a
+          <span class="bold">Github</span> repository to ensure easier
+          collaboration.<br /><br />
+          As our data source, we use
+          <span class="bold">Headless Wordpress</span> where we created our
+          activities posts and assigned categories (moods) and tags (time) to
+          them. We developed our solution in an
+          <span class="bold">SPA architecture</span> - single HTML page with
+          dynamic content load and change.
+        </p>
+      </div>
+      <div class="body-detail">
+        <h2 class="detail-mainheading">Reflection</h2>
+        <p class="detail-maintext">
+          With Selfly you aren't given a universal thing to help you deal with
+          your situation. But rather you get tailored recommendations which
+          would help you build up your own healthy way to deal with different
+          emotional states and possibly create healthy coping mechanisms.
+        </p>
+
+        <div class="explore">
+          <a href="http://selfly.omozejko.com/#/home" class="external-link"
+            >Check out our working prototype!</a
+          >
+          <a
+            href="https://github.com/OlgaMozejko/SelfCare-APP"
+            class="external-link"
+            >Take a look at our Github repository.</a
+          >
+          <a
+            href="https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:8d2b2c7b-8fa7-4b03-a392-b623ee014870"
+            class="external-link"
+            >Browse through my report.</a
+          >
+        </div>
+      </div>
+
+      <div class="nav-detail-desktop">
+        <a href="#home" onclick="goToSection()" class="link-nav">
+          <img
+            src="images/arrow-left.png"
+            alt="Icon Arrow to navigate"
+            height="51"
+            width="245"
+            class="mySvg"
+          />
+        </a>
+        <a href="#project4" onclick="showProject4()" class="link-nav">
+          <img
+            src="images/arrow-right.png"
+            alt="Icon Arrow to navigate"
+            height="51"
+            width="245"
+            class="mySvg"
+          />
+        </a>
+      </div>
+
+      <div class="nav-detail-mobile">
+        <a href="#home" onclick="goToSection()" class="link-nav">
+          <img
+            src="images/arrow-left.png"
+            alt="Icon Arrow to navigate"
+            height="25"
+            width="122"
+            class="mySvg"
+          />
+        </a>
+        <a href="#project4" onclick="showProject4()" class="link-nav">
+          <img
+            src="images/arrow-right.png"
+            alt="Icon Arrow to navigate"
+            height="25"
+            width="122"
+            class="mySvg"
+          />
+        </a>
+      </div>
+
+      <div class="contact-container">
+        <h1 class="contact-heading">Interested in working<br />together?</h1>
+        <div class="wrapper">
+          <form action="#">
+            <div class="dbl-field">
+              <div class="field">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="What is your name?"
+                />
+              </div>
+              <div class="field">
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="What is your e-mail?"
+                />
+              </div>
+            </div>
+            <div class="message">
+              <textarea
+                placeholder="Write your message..."
+                name="message"
+              ></textarea>
+            </div>
+            <div class="button-area">
+              <button type="submit">send</button>
+              <span></span>
+            </div>
+          </form>
+        </div>
+
+        <a href="mailto:hello@vladaafanasjeva.com" class="email-link"
+          >hello@vladaafanasjeva.com</a
+        >
+        <p class="phone">+45 55232225</p>
+
+        <div class="some-flex">
+          <a href="https://www.linkedin.com/in/vladaafanasjeva/"
+            ><img
+              src="images/linkedin-icon.png"
+              class="some-icon"
+              alt="LinkedIn Icon"
+          /></a>
+          <a href="https://www.facebook.com/vlada.afanasjeva.1/"
+            ><img
+              src="images/facebook-icon.png"
+              class="some-icon"
+              alt="Facebook Icon"
+          /></a>
+          <a href="https://www.instagram.com/vladaafanasjeva/"
+            ><img
+              src="images/instagram-icon.png"
+              class="some-icon"
+              alt="Instagram Icon"
+          /></a>
+        </div>
+        <p class="copyright">Made with ♥ @ 2021 Vlada Afanasjeva</p>
+      </div>
+    </section>
+
+    <!-- Project 4: Swibbid -->
+
+    <section id="project4" class="project4">
+      <div class="detail-header">
+        <img
+          src="images/swibbid/swibbidtransparent.png"
+          class="frontloberne-img"
+          alt="Mockup of Swibbid"
+        />
+        <h1 class="project-name">UX Challenge - Swibbid</h1>
+      </div>
+
+      <div class="detail-info">
+        <h2 class="detail-heading">Project info</h2>
+        <p class="detail-text"><span class="bold">Date: </span>March 2021</p>
+        <p class="detail-text"><span class="bold">Duration: </span>3 days</p>
+        <p class="detail-text">
+          <span class="bold">Team: </span>Group of 4 students
+        </p>
+        <div class="detail-flex">
+          <div class="detail-tools">
+            <h2 class="detail-heading">Tools</h2>
+            <img
+              src="images/frontloberne/tools.png"
+              class="tools-img"
+              alt="Icons of tools used in the project"
+            />
+          </div>
+          <div class="detail-methods">
+            <h2 class="detail-heading">Keywords</h2>
+            <div class="methods-flex">
+              <p class="methods-text">
+                UX/UI<br />
+                Sketching<br />
+                Storyboard<br />
+                Prototyping<br />
+                Usability Test
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="body-detail">
+        <h2 class="detail-mainheading">Client</h2>
+        <p class="detail-maintext">
+          Our client was Swibbid - a marketplace for buying and selling used
+          items.
+        </p>
+
+        <h2 class="detail-mainheading">Case</h2>
+        <p class="detail-maintext">
+          I worked on this project during the UX Challenge organized by Danish
+          Design Centre. During a 3 day period me and my team built a prototype
+          for Swibbid. Swibbid has already found a way to list 1 item for sale
+          fast and easy, but they had one important task for us: <br /><br />
+          <span class="bold"
+            >How can a user sell multiple items fast under one listing, while
+            still keeping the announcement informative for buyers?</span
+          >
+        </p>
+
+        <h2 class="detail-mainheading">Process</h2>
+        <p class="detail-maintext">
+          In the beginning of the Challenge, we had a meeting with Swibbid team.
+          After introduction to their app main target group - women 30+, we
+          started brainstorming on the possible solutions. Throughout the
+          process, we used a white board tool called Miro. <br /><br />
+          On the first day, we started with “How Might We” questions to get the
+          inspiration and ideas running. Each of us worked on their own HMW's
+          and later together we identified the most important one -
+          <span class="bold"
+            >How might we come up with a framework for multiple items'
+            description?</span
+          >
+        </p>
+      </div>
+      <img
+        src="images/swibbid/hmw.png"
+        alt="How Might We Questions"
+        class="image-small"
+      />
+      <div class="body-detail">
+        <p class="detail-maintext paragraph">
+          After setting our design goals, we moved to the sketching phase - each
+          of us delivered 3 ideas of how the solution might look like. We had a
+          speed critique and voted on the best features to merge them into our
+          solution.
+        </p>
+      </div>
+      <img
+        src="images/swibbid/sketch.png"
+        alt="Sketch for Swibbid"
+        class="image"
+      />
+      <div class="body-detail">
+        <p class="detail-maintext paragraph">
+          Our second day started with creating a
+          <span class="bold">Storyboard</span> - an enlarged and robust version
+          of the sketch, describing the interaction between the user and the
+          product.
+        </p>
+      </div>
+      <img
+        src="images/swibbid/storyboard.png"
+        alt="Sketch for Swibbid"
+        class="image"
+      />
+      <div class="body-detail">
+        <p class="detail-maintext paragraph">
+          Based on the storyboard, we created our first prototype and tested it
+          on 2 users. We got a lot of useful feedback that we used for
+          improvements.
+        </p>
+      </div>
+      <img
+        src="images/swibbid/mockup.png"
+        alt="Sketch for Swibbid"
+        class="image"
+      />
+
+      <div class="body-detail">
+        <h2 class="detail-mainheading">Reflection</h2>
+        <p class="detail-maintext">
+          The final phase of the UX Challenge was to get ready for the
+          presentation of the results - both to the companies and to the plenary
+          event. The Swibbid team was pleased with our solution, as during our
+          process we gathered a lot of data and ideas on their app improvements.
+        </p>
+
+        <div class="explore">
+          <a
+            href="https://xd.adobe.com/view/e1f55086-3fa6-4ae2-bee5-cf4c33134934-b4a6/?fullscreen&hints=off"
+            class="external-link"
+            >Check out our XD prototype!</a
+          >
+        </div>
+      </div>
+
+      <div class="nav-detail-desktop">
+        <a href="#home" onclick="goToSection()" class="link-nav">
+          <img
+            src="images/arrow-left.png"
+            alt="Icon Arrow to navigate"
+            height="51"
+            width="245"
+            class="mySvg"
+          />
+        </a>
+        <a href="#project1" onclick="showProject1()" class="link-nav">
+          <img
+            src="images/arrow-right.png"
+            alt="Icon Arrow to navigate"
+            height="51"
+            width="245"
+            class="mySvg"
+          />
+        </a>
+      </div>
+
+      <div class="nav-detail-mobile">
+        <a href="#home" onclick="goToSection()" class="link-nav">
+          <img
+            src="images/arrow-left.png"
+            alt="Icon Arrow to navigate"
+            height="25"
+            width="122"
+            class="mySvg"
+          />
+        </a>
+        <a href="#project1" onclick="showProject1()" class="link-nav">
+          <img
+            src="images/arrow-right.png"
+            alt="Icon Arrow to navigate"
+            height="25"
+            width="122"
+            class="mySvg"
+          />
+        </a>
+      </div>
+
+      <div class="contact-container">
+        <h1 class="contact-heading">Interested in working<br />together?</h1>
+        <div class="wrapper">
+          <form action="#">
+            <div class="dbl-field">
+              <div class="field">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="What is your name?"
+                />
+              </div>
+              <div class="field">
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="What is your e-mail?"
+                />
+              </div>
+            </div>
+            <div class="message">
+              <textarea
+                placeholder="Write your message..."
+                name="message"
+              ></textarea>
+            </div>
+            <div class="button-area">
+              <button type="submit">send</button>
+              <span></span>
+            </div>
+          </form>
+        </div>
+
+        <a href="mailto:hello@vladaafanasjeva.com" class="email-link"
+          >hello@vladaafanasjeva.com</a
+        >
+        <p class="phone">+45 55232225</p>
+
+        <div class="some-flex">
+          <a href="https://www.linkedin.com/in/vladaafanasjeva/"
+            ><img
+              src="images/linkedin-icon.png"
+              class="some-icon"
+              alt="LinkedIn Icon"
+          /></a>
+          <a href="https://www.facebook.com/vlada.afanasjeva.1/"
+            ><img
+              src="images/facebook-icon.png"
+              class="some-icon"
+              alt="Facebook Icon"
+          /></a>
+          <a href="https://www.instagram.com/vladaafanasjeva/"
+            ><img
+              src="images/instagram-icon.png"
+              class="some-icon"
+              alt="Instagram Icon"
+          /></a>
+        </div>
+        <p class="copyright">Made with ♥ @ 2021 Vlada Afanasjeva</p>
+      </div>
+    </section>
+
+    <!-- PROJECT 5: nuuii -->
+
+    <section id="project5" class="project5">
+      <div class="detail-header header-wide">
+        <img
+          src="images/nuuii/nuuiitransparent.png"
+          class="frontloberne-img"
+          alt="Mockup of nuuii"
+        />
+        <h1 class="project-name">nuuii - Web Documentary</h1>
+      </div>
+
+      <div class="detail-info">
+        <h2 class="detail-heading">Project info</h2>
+        <p class="detail-text"><span class="bold">Date: </span>February 2021</p>
+        <p class="detail-text"><span class="bold">Duration: </span>3 weeks</p>
+        <p class="detail-text">
+          <span class="bold">Team: </span>Group of 5 students
+        </p>
+        <div class="detail-flex">
+          <div class="detail-tools">
+            <h2 class="detail-heading">Tools</h2>
+            <img
+              src="images/frontloberne/tools.png"
+              class="tools-img"
+              alt="Icons of tools used in the project"
+            />
+          </div>
+          <div class="detail-methods">
+            <h2 class="detail-heading">Keywords</h2>
+            <div class="methods-flex">
+              <p class="methods-text">
+                Storytelling<br />
+                Creative Brief<br />
+                Quantitative research<br />
+                Personas<br />
+                Target group analysis
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="body-detail">
+        <h2 class="detail-mainheading">Client</h2>
+        <p class="detail-maintext">
+          We worked on this project for a company called nuuii - a company that
+          is selling sustainable cleaning products.
+        </p>
+
+        <h2 class="detail-mainheading">Case</h2>
+        <p class="detail-maintext">
+          The goal of the project was to create a web documentary - a
+          story-telling website for a client.
+        </p>
+
+        <h2 class="detail-mainheading">Process</h2>
+        <p class="detail-maintext">
+          To first generate ideas about the web documentary, we conducted a desk
+          research on the client and market they are in. <br />We found out that
+          one of the ways how nuuii are more sustainable and different from
+          their competitors is that the production of their products and the
+          products themselves don't consume any water. That makes it easier to
+          transport the products and leads to reducing the amount of CO2.<br /><br />
+          We therefore decided to use the reduction of water consumption as our
+          main storyline for the web documentary. The web documentary was made
+          in a way to attract and educate consumers using video, illustrations
+          and short texts, rather than them having to read long paragraphs.
+          <br /><br />
+          We performed a thorough target audience analysis by demographic,
+          geographic, psychographic and behavioural variables that helped us to
+          establish a main target group -
+          <span class="bold"
+            >25-35 year old women and men that reside in Denmark and are
+            interested in being environmentally-friendly</span
+          >. We then created our <span class="bold">Personas</span> - displaying
+          both user needs and business objectives.
+        </p>
+      </div>
+
+      <div class="flexi-img">
+        <img
+          src="images/nuuii/persona1.png"
+          alt="Persona ALfred for nuuii"
+          class="persona"
+        />
+        <img
+          src="images/nuuii/persona2.jpg"
+          alt="Persona Camilla for nuuii"
+          class="persona"
+        />
+      </div>
+
+      <div class="body-detail">
+        <p class="detail-maintext paragraph">
+          When we started on our creative process, we made a
+          <span class="bold">Creative Brief</span> - the representation of the
+          design and content that the solution should contain.
+        </p>
+      </div>
+      <img
+        src="images/nuuii/CreativeBriefNUUII.png"
+        alt="Creative Brief for nuuii"
+        class="image"
+      />
+
+      <div class="body-detail">
+        <p class="detail-maintext paragraph">
+          In Creative Brief, we also stated that the goal of our project was to
+          create a non-linear storytelling website that tells one of the nuuii’s
+          sustainability stories – the importance of environmental impact that
+          nuuii’s cleaning products do not contain water. This is when we got an
+          idea to prioritise the storytelling layout based on the
+          <span class="bold">Golden Circle</span> of the company.
+        </p>
+      </div>
+      <img
+        src="images/nuuii/The-Golden-Circle.png"
+        alt="The Golden Circle of nuuii"
+        class="image-medium"
+      />
+
+      <div class="body-detail">
+        <div class="flexi">
+          <p class="detail-maintext paragraph flexi-text">
+            So, when we were creating Wireframe for the website, we structured
+            the content according to nuuii’s Golden Circle:<br /><br />
+
+            1. Content that explains nuuii’s <span class="bold">WHY</span> -
+            general sustainability facts, cleaning product and water consumption
+            statistics.<br />
+            2. nuuii’s <span class="bold">HOW</span> - video about company,
+            nuuii’s story and values.<br />
+            3. nuuii's <span class="bold">WHAT</span> - product gallery and
+            information.<br /><br />
+
+            We think that this Golden Circle interpretation on the website helps
+            to communicate with the user because, based on Golden Circle’s
+            creator’s Simon Sinek theory, it inspires and influences the user's
+            behaviour.
+          </p>
+          <img
+            src="images/nuuii/wireframe.png"
+            alt="The Golden Circle of nuuii"
+            class="image-medium"
+          />
+        </div>
+      </div>
+
+      <div class="body-detail">
+        <p class="detail-maintext paragraph">
+          When we started choosing content and designing, we wanted to make sure
+          that our solution fits nuuii’s concept. We made a
+          <span class="bold">Mood board</span> with nuuii’s color palette and
+          pictures that inspire sustainability to represent nuuii’s aesthetics.
+        </p>
+      </div>
+      <img
+        src="images/nuuii/moodboard.png"
+        alt="Mood Board for nuuii"
+        class="image-medium"
+      />
+
+      <div class="body-detail">
+        <p class="detail-maintext paragraph">
+          We then created a range of illustrations to make our solution more
+          attention grabbing and finalized our
+          <span class="bold">Mockups</span>.
+        </p>
+      </div>
+      <img
+        src="images/nuuii/mockup.jpg"
+        alt="Web Documentary mockup"
+        class="image-medium"
+      />
+
+      <div class="body-detail">
+        <h2 class="detail-mainheading">Reflection</h2>
+        <p class="detail-maintext">
+          I think that our web documentary creates several values for our
+          client:<br /><br />
+          1. Because of many illustratrations and storytelling layout, it grabs
+          the user’s attention, therefore motivating the user to become more
+          environmentally friendly and tempted to buy nuuii products.<br />
+          2. It also provides a stronger emphasis on the importance of reducing
+          water consumption and CO2 because of numerous sustainability facts
+          which leads the user to understand why being environmentally friendly
+          is important for creating a better place for future generations.<br /><br />
+
+          And for the user this solution is a more engaging method of learning
+          about the importance of the reduction of water consumption in nuuii
+          products rather than having to read it as long text.
+        </p>
+
+        <div class="explore">
+          <a
+            href="https://vladaafanasjeva.com/webdocumentary/"
+            class="external-link"
+            >Check out our working prototype!</a
+          >
+          <a
+            href="https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:15f9ddee-07c1-4d84-9332-315f8d23c234"
+            class="external-link"
+            >Take a look at our report.</a
+          >
+        </div>
+      </div>
+
+      <div class="nav-detail-desktop">
+        <a href="#home" onclick="goToSection()" class="link-nav">
+          <img
+            src="images/arrow-left.png"
+            alt="Icon Arrow to navigate"
+            height="51"
+            width="245"
+            class="mySvg"
+          />
+        </a>
+        <a href="#project3" onclick="showProject3()" class="link-nav">
+          <img
+            src="images/arrow-right.png"
+            alt="Icon Arrow to navigate"
+            height="51"
+            width="245"
+            class="mySvg"
+          />
+        </a>
+      </div>
+
+      <div class="nav-detail-mobile">
+        <a href="#home" onclick="goToSection()" class="link-nav">
+          <img
+            src="images/arrow-left.png"
+            alt="Icon Arrow to navigate"
+            height="25"
+            width="122"
+            class="mySvg"
+          />
+        </a>
+        <a href="#project3" onclick="showProject3()" class="link-nav">
+          <img
+            src="images/arrow-right.png"
+            alt="Icon Arrow to navigate"
+            height="25"
+            width="122"
+            class="mySvg"
+          />
+        </a>
+      </div>
+
+      <div class="contact-container">
+        <h1 class="contact-heading">Interested in working<br />together?</h1>
+        <div class="wrapper">
+          <form action="#">
+            <div class="dbl-field">
+              <div class="field">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="What is your name?"
+                />
+              </div>
+              <div class="field">
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="What is your e-mail?"
+                />
+              </div>
+            </div>
+            <div class="message">
+              <textarea
+                placeholder="Write your message..."
+                name="message"
+              ></textarea>
+            </div>
+            <div class="button-area">
+              <button type="submit">send</button>
+              <span></span>
+            </div>
+          </form>
+        </div>
+
+        <a href="mailto:hello@vladaafanasjeva.com" class="email-link"
+          >hello@vladaafanasjeva.com</a
+        >
+        <p class="phone">+45 55232225</p>
+
+        <div class="some-flex">
+          <a href="https://www.linkedin.com/in/vladaafanasjeva/"
+            ><img
+              src="images/linkedin-icon.png"
+              class="some-icon"
+              alt="LinkedIn Icon"
+          /></a>
+          <a href="https://www.facebook.com/vlada.afanasjeva.1/"
+            ><img
+              src="images/facebook-icon.png"
+              class="some-icon"
+              alt="Facebook Icon"
+          /></a>
+          <a href="https://www.instagram.com/vladaafanasjeva/"
+            ><img
+              src="images/instagram-icon.png"
+              class="some-icon"
+              alt="Instagram Icon"
+          /></a>
+        </div>
+        <p class="copyright">Made with ♥ @ 2021 Vlada Afanasjeva</p>
+      </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
